@@ -1,0 +1,23 @@
+{
+  "name": "first-github-project-from-tjsanshao",
+  "version": "1.0.0",
+  "description": "THIS IS FIRST PROJECT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TjSanshao/First-github-project-from-TjSanshao.git"
+  },
+  "author": "TjSanshao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TjSanshao/First-github-project-from-TjSanshao/issues"
+  },
+  "homepage": "https://github.com/TjSanshao/First-github-project-from-TjSanshao#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}

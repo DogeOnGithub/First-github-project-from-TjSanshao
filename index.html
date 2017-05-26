@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>First Project</title>
+	<style type="text/css" media="screen">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			padding-left: 160px;
+			padding-right: 160px;
+			padding-top: 10px;
+			background-color: rgb(238, 248, 246);
+		}
+		h1{
+			text-align: center;
+			margin: 0 auto;
+			color: cornflowerblue;
+			font-size: 88px; 
+			background-color: white;
+			font-family: '楷体'
+		}
+		p{
+			margin: 5px;
+		}
+		.title{
+			text-align: left;
+			text-decoration: underline;
+			font-size: 28px;
+		}
+		.content{
+			text-indent: 2em;
+		}
+		p>span{
+			font-size: 36px;
+		}
+		p>span>a{
+			text-decoration: none;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>计算机协会唔知咩野嘅授课课件</h1>
+	<p class="title">先介绍两个网站：</p>
+	<p><span><a href="https://github.com/">github</a></span>&nbsp;&nbsp;和&nbsp;&nbsp;<span><a href="https://stackoverflow.com/">stackoverflow</a></span></p>
+	<p class="content">github是世界上最大的代码托管平台，stackoverflow是全球最大的问答社区，当然了，都是英文的</p>
+	<p class="title">从javascript开始讲:</p>
+	<p class="content">javascript是现代浏览器默认脚本语言，三部分组成：<span>ECMAScript、DOM、BOM</span></p>
+	<p class="content">ECMAscript是指语法部分，DOM是文档对象模型，BOM是浏览器对象模型，在使用javascript的时候大部分时间都是在操作DOM，从而让一个网页动起来，也就是网页的节点动起来</p>
+	<p class="content">面向对象编程思想，抽象出来的一般属性叫做类，比如，女朋友是一个类，因为是抽象出来的，他的女朋友就是一个实例，因为是真是存在的，在堆上</p>
+	<p class="content">js目前来说什么都能做，前端到后台都能胜任，有个js全栈工程师的概念</p>
+	<p class="title">ajax：</p>
+	<p class="content">AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术，其实就是在不刷新整个页面的情况下和后台进行数据交互，从而对网页进行部分的更新</p>
+	<p class="content">目前来说，开发是越来越偏向于前端的，Angular、React、Vue这些框架的出现，基本上后台的作用就是把数据打包成JSON文件发送给前端由前端进行渲染</p>
+	<p class="content">原生js的异步请求:</p>
+	<pre>
+		let xhr = new XMLHttpRequest();
+		xhr.open(method, url, async?, user?, psw?);
+		xhr.send();
+	</pre>
+	<p class="title">http:</p>
+	<p class="content">超文本传输协议，基于TCP/IP的一种传输协议</p>
+	<p class="title">nodejs:</p>
+	<p class="content">node是js的一个运行环境，以前的时候，js是能作为脚本在html嵌入的情况下在浏览器运行</p>
+	<p class="content">node让js可以在本地运行，并且提供了一系列的模块，让js有了和系统交互的能力，就是读取文件、监听端口等，这些都是node这个环境赋予js的</p>
+	<p class="content">目前nodejs是一个轻量级的web服务器解决方案，主要的特点是快、轻</p>
+	<p class="content">nodejs不用依靠服务器软件，它本身就可以称为一个服务器软件，并且node只有几个兆的大小，可以说是非常非常轻量，是极客们追求极致的一种产物</p>
+	<p class="content">传统的服务器是基于多线程的，也就是说，每一个用户都会让服务器开辟一个新的线程来进行服务，但是线程是有限的，所以当负载过大时，服务器将会变慢</p>
+	<p class="content">nodejs区别于传统服务器，它是单线程的，无论有多少个用户访问，仍然是只有一个线程</p>
+	<p class="content">nodejs将每个用户的访问作为一个事件，由事件来驱动，也就是我们所说的监听事件</p>
+	<p class="content">nodejs的I/O都是异步的，异步机制的实现基于event loop，以及最底层的线程池</p>
+	<p class="title">wamp:</p>
+	<p class="content">wamp指的是Windows + apache + mysql + php</p>
+	<p class="content">但是在真正的服务器开发中的架构其实是LAMP，L就是linux</p>
+	<p class="content">为什么？因为开源不用钱，很直接</p>
+	<p class="content">php号称世界上最好的编程语言，实际上php长期占据市场，和asp，jsp叫传统3p</p>
+	<p class="content">php内置了上千的函数，基本上，我们用php的时候就是在函数套函数，函数再套函数，当然了，php也是有内置对象的，但是我觉得php的强大还是在于其又强大又多的内置函数</p>
+	<p class="title">Database:</p>
+	<p class="content">数据库，后台开发永远避不开数据库的搭建</p>
+	<p class="content">数据库其实是一种长期存储在计算机内的有结构的、有组织的、可以共享的大量的数据的集合，说白了，就是一堆数据，但是这一堆数据是有规律的，数据库管理系统（DBMS）可以根据这个规律快速的查找到我们所需要的数据，这个规律的话，我们叫做引擎</p>
+	<p class="content">数据库有很多种，我们目前最常见的就是关系型数据库，关系型数据库其实就是一张张表，一张表代表一个关系，就像是excel吧，表头叫做属性，一个行叫做元组</p>
+	<p class="title">apache:</p>
+	<p class="content">阿帕奇，一个web服务器软件，提供了很多功能，对照一下nodejs</p>
+</body>
+</html>
