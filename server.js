@@ -1,5 +1,5 @@
-const http = require('http');
-const fs = require('fs');
+const http = require('http'); //http模块
+const fs = require('fs');   //文件系统模块 file system
 
 const PORT = 3000;
 
